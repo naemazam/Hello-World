@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" src="./hw.png" alt="Hellow World">
+  <img width="200" src="./hw.gif" alt="Hellow World">
   
   <h1 align="center">Hellow World!!!</h1>
 </p> 
