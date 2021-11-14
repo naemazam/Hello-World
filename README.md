@@ -44,3 +44,35 @@
 
 ## Before Start
 
+
+## JavaScript
+
+JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions. Wikipedia
+
+First appeared: December 4, 1995; 25 years ago
+
+Designed by: Brendan Eich of Netscape initially; others have also contributed to the ECMAScript standard
+
+Stable release: ECMAScript 2021 / June 2021; 5 months ago
+
+Paradigm: event-driven, functional, imperative
+
+Typing discipline: Dynamic, weak, duck
+
+JavaScript files are stored with the . js extension.
+
+# How to Install Node.js and NPM on Windows
+Step 1: Download Node.js Installer. In a web browser, navigate to https://nodejs.org/en/download/
+
+Step 2: Install Node.js and NPM from Browser. Once the installer finishes downloading, launch it.
+
+Step 3: Verify Installation.
+
+
+```JavaScript
+<script>
+  console.log('Hello, World!');
+</script>
+```
+
+
