@@ -281,4 +281,27 @@ disp('Hello, World!');
 
 ```
 
+# R
+R is a programming language and free software environment for statistical computing and graphics supported by the R Core Team and the R Foundation for Statistical Computing. It is widely used among statisticians and data miners for developing statistical software and data analysis
+
+Developer: R Core Team
+
+Typing discipline: Dynamic
+
+First appeared: August 1993; 28 years ago
+
+Stable release: 4.1.2 / 1 November 2021; 8 days ago
+
+License: GNU GPL v2
+
+Designed by: Ross Ihaka and Robert Gentleman
+
+Paradigms: Multi-paradigm: procedural, object-oriented, functional, reflective, imperative, array
+
+## Print Hellow World In R
+```r
+cat('Hello, World!')
+
+```
+
 
