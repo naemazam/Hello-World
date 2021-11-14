@@ -752,6 +752,34 @@ print("Hello, World!")
 
 ```
 
+
+# shell script
+High-level programming language.
+
+A shell script is a computer program designed to be run by the Unix shell, a command-line interpreter. The various dialects of shell scripts are considered to be scripting languages. Typical operations performed by shell scripts include file manipulation, program execution, and printing text.
+
+## Print Hellow World In shell script
+```bash
+#!/bin/sh
+# This is a comment!
+echo Hello World        # This is a comment, too!
+```
+
+now run chmod 755 first.sh to make the text file executable, and run ./first.sh.
+
+```bash
+$ chmod 755 first.sh
+$ ./first.sh
+Hello World
+
+```
+You will probably have expected that! You could even just run:
+```bash
+$ echo Hello World
+Hello World
+
+```
+
 # Scala
 Scala is a strong statically typed general-purpose programming language which supports both object-oriented programming and functional programming. Designed to be concise, many of Scala's design decisions are aimed to address criticisms of Java.
 
