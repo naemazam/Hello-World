@@ -304,4 +304,207 @@ cat('Hello, World!')
 
 ```
 
+# Ruby
+Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection and just-in-time compilation.
+
+The current stable version is 3.0. 2. Please be sure to read Ruby's License.
+
+An RB file is a software program written in Ruby, an object-oriented scripting language. Ruby is designed to be simple, efficient, and easy to read. RB files can be edited with a text editor and run using Ruby. Ruby is available in several different versions, or "gems," including Ruby on Rails, Mongrel, and Capistrano.
+
+## Print Hellow World In Rub
+```rub
+cat('Hello, World!')
+
+```
+
+# Rust
+Rust is a multi-paradigm, high-level, general-purpose programming language designed for performance and safety, especially safe concurrency. Rust is syntactically similar to C++, but can guarantee memory safety by using a borrow checker to validate references.
+
+Developer: The Rust Foundation
+
+Stable release: 1.56.1 / November 1, 2021; 11 days ago
+
+First appeared: July 7, 2010; 11 years ago
+
+Filename extensions: rs,.rlib
+
+Paradigms: Multi-paradigm: concurrent, functional, generic, imperative, structured
+
+Typing discipline: Affine, inferred, nominal, static, strong
+
+License: MIT or Apache 2.0
+## Print Hellow World In Rust
+```rust
+fn main() {
+ println!("Hello, World!");
+}
+
+```
+
+#  TypeScript
+TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. TypeScript is designed for the development of large applications and transcompiles to JavaScript.
+
+Developer: Microsoft
+
+License: Apache License 2.0
+
+Typing discipline: Duck, gradual, structural
+
+Stable release: 4.4.4 / 12 October 2021; 28 days ago
+
+First appeared: 1 October 2012; 9 years ago
+
+Filename extensions: ts,.tsx
+
+Paradigm: Multi-paradigm: functional, generic, imperative, object-oriented
+
+## Print Hellow World In  TypeScript
+```typescript
+let message: string = 'Hello, World!';
+console.log(message);
+```
+
+# Perl
+Perl is a family of two high-level, general-purpose, interpreted, dynamic programming languages. "Perl" refers to Perl 5, but from 2000 to 2019 it also referred to its redesigned "sister language", Perl 6, before the latter's name was officially changed to Raku in October 2019.
+
+Developer: Larry Wall
+
+License: Artistic License 1.0 or GNU General Public License
+
+Implementation language: C
+
+Typing discipline: Dynamic
+
+First appeared: February 1, 1988; 33 years ago
+
+Stable release: : 5.34.0 / 20 May 2021; 5 months ago; 5.32.1 / 23 January 2021; 9 months ago;
+
+Filename extensions: plx,.pl,.pm,.xs,.t,.pod,.cgi
+
+## Print Hellow World In  perl
+```perl
+#!/usr/bin/perl
+use strict;
+use warnings;
+print("Hello, World!");
+```
+
+# Scala
+Scala is a strong statically typed general-purpose programming language which supports both object-oriented programming and functional programming. Designed to be concise, many of Scala's design decisions are aimed to address criticisms of Java.
+
+Designed by: Martin Odersky
+
+First appeared: 20 January 2004; 17 years ago
+
+Stable release: 3.0.2 / 1 September 2021; 2 months ago
+
+License: Apache 2.0
+
+Typing discipline: Inferred, static, strong, structural
+
+Implementation language: Scala
+
+Filename extensions: scala,.sc
+
+## Print Hellow World In  Scala
+```Scala
+object Hello {
+ def main(args: Array[String]) = {
+ println("Hello, World!")
+ }
+}
+```
+
+# Dart
+Dart is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. Dart is an object-oriented, class-based, garbage-collected language with C-style syntax. 
+
+Developer: Google
+
+Stable release: 2.14.1 / 8 September 2021; 2 months ago
+
+First appeared: October 10, 2011; 10 years ago
+
+Designed by: Lars Bak and Kasper Lund
+
+License: BSD
+
+Filename extensions: dart
+
+Paradigm: Multi-paradigm: functional, imperative, object-oriented, reflective
+
+## Print Hellow World In  Dart
+```Dart
+void main() {
+ print('Hello, World!');
+}
+```
+
+# Solidity
+Solidity is an object-oriented programming language for writing smart contracts. It is used for implementing smart contracts on various blockchain platforms, most notably, Ethereum
+
+Solidity value types include booleans, integers, fixed point numbers, addresses, contract types, fixed-size byte arrays, rational and integer literals, and enums. Reference types such as arrays and structs can be stored in these options: memory , storage , and calldata .
+
+The best alternative is JavaScript, which is both free and Open Source. Other great apps like Solidity are Ethereum (Free, Open Source), JSON (Free), CrossBrowdy (Free, Open Source) and Bytom (Free, Open Source)
+
+## Print Hellow World In  Solidity
+```Solidity
+pragma solidity ^0.4.22;
+contract helloWorld {
+ function renderHelloWorld () public pure returns (string) {
+ return 'Hello, World!';
+ }
+}
+```
+
+# Go
+Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
+
+Implementation language: Go, Assembly language (gc); C++ (gofrontend)
+
+Typing discipline: Inferred, static, strong, structural, nominal
+
+First appeared: November 10, 2009; 11 years ago
+
+OS: DragonFly BSD, FreeBSD, Linux, macOS, NetBSD, OpenBSD, Plan 9, Solaris, Windows
+
+License: 3-clause BSD + patent grant
+
+Paradigm: Multi-paradigm: concurrent, functional, imperative, object-oriented
+
+Designed by: Robert Griesemer, Rob Pike, Ken Thompson
+
+Source code for a program written in Go, a programming language originally developed by Google; contains code written in plain text format that must be compiled before being run as a program. Go is loosely based off of the programming language C, which uses the . C file extension for its source code.
+
+## Print Hellow World In  Go
+```Go
+package main
+import "fmt"
+
+func main() {
+ fmt.Println("Hello, World!")
+}
+```
+
+# Julia
+Julia is a high-level, high-performance, dynamic programming language. While it is a general-purpose language and can be used to write any application, many of its features are well suited for numerical analysis and computational science.
+
+Typing discipline: Dynamic, strong, nominative, parametric, optional
+
+Implementation language: Julia, C, C++, Scheme, LLVM
+
+Stable release: 1.6.3 / 23 September 2021; 48 days ago
+
+First appeared: 2012; 9 years ago
+
+Filename extensions: jl
+
+License: MIT (core), GPL v2; a makefile option omits GPL libraries
+
+Designed by: Alan Edelman, Jeff Bezanson, Stefan Karpinski, Viral B. Shah
+
+## Print Hellow World In  Julia
+```Julia
+println("Hello, World!")
+```
+
 
