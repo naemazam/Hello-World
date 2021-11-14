@@ -178,6 +178,36 @@ h1 {
 <h1>Hello, world!</h1>
 
 ```
+
+
+# Clojure
+
+Clojure is a dynamic and functional dialect of the Lisp programming language on the Java platform. Like other Lisp dialects, Clojure treats code as data and has a Lisp macro system. The current development process is community-driven, overseen by Rich Hickey as its benevolent dictator for life. 
+
+Designed by: Rich Hickey
+
+License: Eclipse Public License
+
+Platform: Java; JavaScript.NET
+
+Typing discipline: dynamic; strong
+
+Stable release: 1.10.3 / 4 March 2021; 8 months ago
+
+First appeared: 2007; 14 years ago
+
+Filename extensions: .clj.cljs.cljc.edn
+
+## Print Hellow World In Clojure
+```Clojure
+(ns clojure.examples.hello
+   (:gen-class))
+(defn hello-world []
+   (println "Hello World"))
+(hello-world)
+
+```
+
 # Dart
 Dart is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. Dart is an object-oriented, class-based, garbage-collected language with C-style syntax. 
 
@@ -201,6 +231,84 @@ void main() {
  print('Hello, World!');
 }
 ```
+
+# Elixir
+
+Elixir is a functional, concurrent, general-purpose programming language that runs on the BEAM virtual machine which is also used to implement the Erlang programming language. Elixir builds on top of Erlang and shares the same abstractions for building distributed, fault-tolerant applications.
+
+Platform: Erlang
+
+Typing discipline: dynamic, strong, duck
+
+Stable release: 1.12 / 19 May 2021; 5 months ago
+
+License: Apache License 2.0
+
+First appeared: 2012; 9 years ago
+
+Paradigm: multi-paradigm: functional, concurrent, distributed, process-oriented
+
+Filename extensions: ex,.exs
+
+## Print Hellow World In Elixir
+```Elixir
+IO.puts("Hello, World!")
+```
+
+# Elm
+Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces. Elm is purely functional, and is developed with emphasis on usability, performance, and robustness.
+
+Typing discipline: Static, Strong, Inferred
+
+Stable release: 0.19.1 / October 21, 2019; 2 years ago
+
+License: Permissive (Revised BSD)
+
+First appeared: March 30, 2012; 9 years ago
+
+Paradigm: Functional
+
+
+## Print Hellow World In Elm
+```Elm
+String helloWorld = "Hello, World!";
+```
+
+
+# Fortran
+Fortran is a general-purpose, compiled imperative programming language that is especially suited to numeric computation and scientific computing. Fortran was originally developed by IBM in the 1950s for scientific and engineering applications, and subsequently came to dominate scientific computing
+
+Designed by: John Backus
+
+First appeared: 1957; 64 years ago
+
+Paradigm: Multi-paradigm: structured, imperative (procedural, object-oriented), generic, array
+
+Typing discipline: strong, static, manifest
+
+Typical Fortran source files have a file extension of . f90, . for, and . f.
+
+## Print Hellow World In Fortran
+```Fortran
+program hello
+  ! This is a comment line; it is ignored by the compiler
+  print *, 'Hello, World!'
+end program hello
+```
+
+Having saved your program to hello.f90, compile at the command line with:
+
+```Fortran
+$> gfortran hello.f90 -o hello
+```
+
+To run your compiled program:
+
+```Fortran
+./hello
+Hello, World!
+```
+
 # Go
 Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
 
@@ -229,6 +337,7 @@ func main() {
  fmt.Println("Hello, World!")
 }
 ```
+
 # JavaScript
 
 JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions. Wikipedia
