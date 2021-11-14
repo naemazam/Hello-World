@@ -338,6 +338,82 @@ func main() {
 }
 ```
 
+# GraphQL
+GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data. GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015.
+
+Developer(s): Facebook, and community
+
+Initial release: September 14, 2015
+
+Written in: Implementations in Java, JavaScript, Ruby, Scala, others
+
+Stable release: June 2018
+
+GraphQL, Cube. js, Apollo, Oracle PL/SQL, and Oracle PL/SQL are the most popular alternatives and competitors to graphql.
+
+
+## Print Hellow World In GraphQL
+```GraphQL
+
+```
+
+
+# haskel
+Haskell is a general-purpose, statically typed, purely functional programming language with type inference and lazy evaluation.
+
+Typing discipline: Inferred, static, strong
+
+Stable release: Haskell 2010 / July 2010; 11 years ago
+
+First appeared: 1990; 31 years ago
+
+Filename extensions: hs,.lhs
+
+Paradigm: Purely functional
+
+Preview release: Haskell 2020 announced
+
+Filename extensions	.hs, .lhs
+
+## Print Hellow World In haskel
+```haskel
+// The root provides a resolver function for each API endpoint
+var root = {
+  hello: () => {
+    return 'Hello world!';
+  },
+};
+```
+
+# html
+The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+
+Developed by: WHATWG
+
+Latest release: Living Standard; (2021)
+
+Initial release: 1993; 28 years ago
+
+Extended from: SGML
+
+Extended to: XHTML
+
+Contained by: Web browser
+
+File extention .html/.htm
+
+## Print Hellow World In html
+```html
+<html>
+ <head>
+ </head>
+ <body>
+   <h1>Hello World<h1>
+ </body>
+</html>
+
+```
+
 # JavaScript
 
 JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions. Wikipedia
@@ -433,6 +509,66 @@ fun main(args: Array<String>) {
  println("Hello, World!")
 }
 ```
+
+
+# LaTeX
+The LaTeX system is a markup language that handles typesetting and rendering, and can be arbitrarily extended by using the underlying macro language to develop custom macros such as new environments and commands. ... 
+In order to create a document in LaTeX, you first write a file, say document.
+
+License: LaTeX Project Public License (LPPL)
+
+[Repository](github.com/latex3/latex2e)
+
+## Print Hellow World In LaTeX
+```LaTeX
+\documentclass[a4paper]{article}
+\begin{document}
+Hello world!
+\end{document}
+```
+
+
+# Lua
+High-level programming language.
+
+Lua is a lightweight, high-level, multi-paradigm programming language designed primarily for embedded use in applications. Lua is cross-platform, since the interpreter of compiled bytecode is written in ANSI C, and Lua has a relatively simple C API to embed it into applications
+
+Typing discipline: Dynamic, strong, duck
+
+Designed by: Roberto Ierusalimschy; Waldemar Celes; Luiz Henrique de Figueiredo
+
+Implementation language: ANSI C
+
+First appeared: 1993; 28 years ago
+
+Paradigm: Multi-paradigm: scripting, imperative (procedural, prototype-based, object-oriented), functional
+
+Files that contain the extension LUA are a source code and script file type that contains code
+
+
+## Print Hellow World In Lua
+```Lua
+    print("Hello World")
+```
+
+
+
+# Markdown
+High-level programming language.
+
+Markdown is a lightweight markup language for creating formatted text using a plain-text editor. ... Markdown is widely used in blogging, instant messaging, online forums, collaborative software, documentation pages, and readme files.
+
+Extended to: GitHub Flavored Markdown
+
+UTI conformation: public.plain-text
+
+Open format?: yes
+
+## Print Hellow World In Markdown
+```Markdown
+  print("Hello World")
+```
+
 # Matlab
 MATLAB is a proprietary multi-paradigm programming language and numeric computing environment developed by MathWorks. MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages.
 
@@ -451,6 +587,33 @@ Paradigm: multi-paradigm: functional, imperative, procedural, object-oriented, a
 disp('Hello, World!');
 
 ```
+
+# Octive
+High-level programming language.
+
+GNU Octave is software featuring a high-level programming language, primarily intended for numerical computations. Octave helps in solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with MATLAB.
+
+Developer(s): John W. Eaton and many others
+
+License: 2007: GPL-3.0-or-later; 1992: GPL-2.0-or-later
+
+Available in: 18 languages
+
+Written in: C++ (main), Octave itself (scripts), C (wrapper code), Fortran (linear algebra wrapper code)
+
+Stable release: 6.4.0 / 30 October 2021; 13 days ago
+
+Operating system: Windows, macOS, Linux, BSD
+
+Initial release: 4 January 1993; 28 years ago (first alpha release); 17 February, 1994; 27 years ago (version 1.0)
+
+## Print Hellow World In Octave
+```Octave
+  disp('Hello, World!')
+```
+
+
+
 # Python
 
 Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
