@@ -48,7 +48,214 @@ There are about 700 programming languages, including esoteric coding languages. 
 <p align="center">
   <h1 align="center">Let's Start</h1>
   <p align="center"> Languages Are On Alphabetical Order </p>
+  <table> 
+<tr>
+<th>A</th>
+<td>Assembly language</td>
+	<td> Apache Groovy</td>
+</tr>
+<tr>
+<th>C</th>
+<td>C</td>
+<td>C#</td>
+<td>C++</td>
+<td> css</td>
+<td>Clojure</td>
+</tr>
+<tr>
+<th>D</th>
+<td> Dart</td>
+</tr>
+<tr>
+<th>E</th>
+<td>Elixir</td>
+<td> Elm</td>
+</tr>
+<tr>
+<th>F</th>
+<td>Fortran</td>
+</tr>
+<tr>
+<th>G</th>
+<td>Go</td>
+<td>GraphQL</td>
+</tr>
+<tr>
+<th>H</th>
+<td>haskel</td>
+<td>html</td>
+</tr>
+<tr>
+<th>J</th>
+<td>JavaScript</td>
+<td>Julia</td>
+<td>Java</td>
+</tr>
+<tr>
+<th>K</th>
+<td>Kotlin</td>
+</tr>
+<tr>
+<th>L</th>
+<td>LaTeX</td>
+<td> Lua</td>
+</tr>
+<tr>
+<th>M</th>
+<td>Markdown</td>
+<td>Matlab</td>
+</tr>
+<tr>
+<th>O</th>
+<td>Octive</td>
+</tr>
+<tr>
+<th>P</th>
+<td>Python</td>
+<td>PHP</td>
+<td>Perl</td>
+</tr>
+<tr>
+<th>R</th>
+<td>Ruby</td>
+<td>R</td>
+<td>Rust</td>
+</tr>
+<tr>
+<th>S</th>
+<td>Swift</td>
+<td>shell script</td>
+<td> Scala</td>
+<td> Solidity</td>
+</tr>
+<tr>
+<th>T</th>
+<td>TypeScript</td>
+</tr>
+</table>
 </p> 
+
+
+# Assembly language
+Low-level programming language
+
+assembly language, sometimes abbreviated asm, is any low-level programming language in which there is a very strong correspondence between the instructions in the language and the architecture's machine code instructions.
+
+It used one-letter mnemonics developed by David Wheeler, who is credited by the IEEE Computer Society as the creator of the first "assembler". Reports on the EDSAC introduced the term "assembly" for the process of combining fields into an instruction word.
+
+ASM filename suffix is mostly used for Assembler Source Code Format files. ASM files are supported by software applications available for devices running Linux, Mac OS, Windows. Files with ASM extension are categorized as Developer Files files. The Developer Files subset comprises 1185 various file formats.
+
+## Print Hellow World In asm
+A minimal-size version
+```asm
+; hello-DOS.asm - single-segment, 16-bit "hello world" program
+;
+; assemble with "nasm -f bin -o hi.com hello-DOS.asm"
+
+    org  0x100        ; .com files always start 256 bytes into the segment
+
+    ; int 21h is going to want...
+
+    mov  dx, msg      ; the address of or message in dx
+    mov  ah, 9        ; ah=9 - "print string" sub-function
+    int  0x21         ; call dos services
+
+    mov  ah, 0x4c     ; "terminate program" sub-function
+    int  0x21         ; call dos services
+
+    msg  db 'Hello, World!', 0x0d, 0x0a, '$'   ; $-terminated message
+```
+Individual-character output along with string output
+```asm
+; hello2-DOS.asm - single-segment, 16-bit "hello world" program
+;
+; This demonstrates single-character output as well as string output
+; via DOS services
+;
+; assemble with "nasm -f bin -o hi.com hello2-DOS.asm"
+
+    org  0x100        ; .com files always start 256 bytes into the segment
+
+    ; int 21h is going to want...
+
+    mov  dx, msg      ; the address of or message in dx
+    mov  ah, 9        ; ah=9 - "print string" sub-function
+    int  0x21         ; call dos services
+
+    mov  dl, 0x0d     ; put CR into dl
+    mov  ah, 2        ; ah=2 - "print character" sub-function
+    int  0x21         ; call dos services
+
+    mov  dl, 0x0a     ; put LF into dl
+    mov  ah, 2        ; ah=2 - "print character" sub-function
+    int  0x21         ; call dos services
+
+    mov  ah, 0x4c     ; "terminate program" sub-function
+    int  0x21         ; call dos services
+
+    msg  db 'Hello again, World!$'   ; $-terminated message
+```
+DOS2 length-delimited output
+```asm
+; hello3-DOS.asm - single-segment, 16-bit "hello world" program
+;
+; Use DOS 2.0's service 40 to output a length-delimited string.
+;
+; assemble with "nasm -f bin -o hi.com hello3-DOS.asm"
+
+    org  0x100          ; .com files always start 256 bytes into the segment
+
+; int 21h needs...
+    mov  dx, msg        ; message's address in dx
+    mov  cx, len
+    mov  bx, 1          ; Device/handle: standard out (screen)
+    mov  ah, 0x40       ; ah=0x40 - "Write File or Device"
+    int  0x21           ; call dos services
+
+    mov  ah, 0x4c       ; "terminate program" sub-function
+    int  0x21           ; call dos services
+
+msg     db 'New hello, World!', 0x0d, 0x0a   ; message
+len     equ $ - msg     ;msg length
+```
+a Linux-compatible version
+```asm
+;"hello, world" in assembly language for Linux
+;
+;to build an executable:
+;       nasm -f elf hello.asm
+;       ld -s -o hello hello.o
+
+section .text
+; Export the entry point to the ELF linker or loader.  The conventional
+; entry point is "_start". Use "ld -e foo" to override the default.
+    global _start
+
+section .data
+msg db  'Hello, world!',0xa ;our dear string
+len equ $ - msg         ;length of our dear string
+
+section .text
+
+; linker puts the entry point here:
+_start:
+
+; Write the string to stdout:
+
+    mov edx,len ;message length
+    mov ecx,msg ;message to write
+    mov ebx,1   ;file descriptor (stdout)
+    mov eax,4   ;system call number (sys_write)
+    int 0x80    ;call kernel
+
+; Exit via the kernel:
+
+    mov ebx,0   ;process' exit code
+    mov eax,1   ;system call number (sys_exit)
+    int 0x80    ;call kernel - this interrupt won't return
+```
+
+
 
 # Apache Groovy
 Apache Groovy is a Java-syntax-compatible object-oriented programming language for the Java platform. It is both a static and dynamic language with features similar to those of Python, Ruby, and Smalltalk.
